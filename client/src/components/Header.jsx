@@ -30,15 +30,12 @@ const Header = () => {
           <FaMoon />
         </Button>
         <Link to="/sign-in">
-          <Button gradientDuoTone="purpleToBlue" className="w-fit h-fit px-2">
-            <h1 className="font-semibold">Sign In</h1>
+          <Button gradientDuoTone="purpleToBlue" className="w-fit h-fit" outline>
+            <h1 className="font-semibold" >Sign In</h1>
           </Button>
         </Link>
         <Navbar.Toggle />
       </div>
-
-     
-
       <Navbar.Collapse>
         <Navbar.Link active={path === "/"} as={'div'}>
           <Link to="/" className="text-sm sm:text-base">
